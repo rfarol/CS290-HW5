@@ -1,20 +1,36 @@
 <h1>You sent the following data in a POST request:</h1>
 <table>
   <caption>Post Values Below:</caption>
+  <thead>
+    <tr>
+       <th>Label</th>
+       <th>Key</th>
+    </tr>
+  </thead>
+  <tbody>
   {{#each postquerylist}}
     <tr>
-        <th>{{this.label}}</th>
-        <th>{{this.key}}</th>
+        <td>{{this.label}}</td>
+        <td>{{this.key}}</td>
     </tr>
   {{/each}}
+  </tbody>
 </table>
 
 <table>
   <caption>Post Body Values Below:</caption>
+  <thead>
+    <tr>
+       <th>Label</th>
+       <th>Key</th>
+    </tr>
+  </thead>
+  <tbody>
   {{#each postbodylist}}
     <tr>
-        <th>{{this.blabel}}</th>
-        <th>{{this.bkey}}</th>
+        <td>{{this.blabel}}</td>
+        <td>{{this.bkey}}</td>
     </tr>
   {{/each}}
+  </tbody>
 </table>
