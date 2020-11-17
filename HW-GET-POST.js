@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-app.set('port', 4242);
+app.set('port', 4243);
 
 /* get form calls the handlebar: get-request-output to render. Push method was taken from lecture week 8 - Server Side form Handling.
 Takes the two names: label and key, and makes an array object from the query. It can be iterated and output the labels and keys of the 
