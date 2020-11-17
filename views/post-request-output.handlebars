@@ -1,0 +1,20 @@
+<h1>You sent the following data in a POST request:</h1>
+<table>
+  <caption>Post Values Below:</caption>
+  {{#each postquerylist}}
+    <tr>
+        <th>{this.label}}</th>
+        <th>{{this.key}}</th>
+    </tr>
+  {{/each}}
+</table>
+
+<table>
+  <caption>Post Body Values Below:</caption>
+  {{#each postbodylist}}
+    <tr>
+        <th>{this.blabel}}</th>
+        <th>{{this.bkey}}</th>
+    </tr>
+  {{/each}}
+</table>

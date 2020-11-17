@@ -1,0 +1,10 @@
+<h1>You sent the following data in a GET request:</h1>
+<table>
+  <caption>Get Values Below:</caption>
+  {{#each getquerylist}}
+    <tr>
+        <th>{this.label}}</th>
+        <th>{{this.key}}</th>
+    </tr>
+  {{/each}}
+</table>
